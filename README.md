@@ -1,4 +1,4 @@
-# Visor Web de Información Geoespacial
+<img width="1920" height="890" alt="Captura de pantalla (367)" src="https://github.com/user-attachments/assets/e3457bbb-7254-4af8-85a6-79586d8f0a76" /># Visor Web de Información Geoespacial
 
 Aplicación web para el monitoreo ambiental de la calidad de agua y aire, que permite visualizar estaciones de monitoreo, distritos y ríos sobre un mapa, así como consultar las mediciones registradas.
 
@@ -16,4 +16,6 @@ Aplicación web para el monitoreo ambiental de la calidad de agua y aire, que pe
 - Visualización de distritos y ríos.
 - Consulta de mediciones de calidad de agua y aire.
 
+
+<img width="1920" height="890" alt="Captura de pantalla (367)" src="https://github.com/user-attachments/assets/d36f692b-3360-495a-bd49-82abcfaca6c7" />
 
