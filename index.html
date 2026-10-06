@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoreo Ambiental</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <div>
+        <span class="mini-title">SISTEMA WEB</span>
+        <h1>Monitoreo Ambiental</h1>
+    </div>
+
+    <div class="estado" id="estado">
+        Conectando...
+    </div>
+
+</header>
+
+<div class="contenedor">
+
+    <aside class="panel">
+
+        <div class="panel-header">
+            <h2>Monitoreo ambiental</h2>
+            <p>
+                Consulta las condiciones ambientales registradas
+                en Lima Metropolitana.
+            </p>
+        </div>
+
+        <div class="seccion">
+
+            <label>Tipo de monitoreo</label>
+
+            <button class="tipo activo" data-tipo="agua">
+                <span class="icono">💧</span>0
+
+                <div>
+                    <b>Calidad de agua</b>
+                    <small>Ríos monitoreados</small>
+                </div>
+            </button>
+
+            <button class="tipo" data-tipo="aire">
+                <span class="icono">🌫️</span>
+
+                <div>
+                    <b>Calidad de aire</b>
+                    <small>Estaciones de monitoreo</small>
+                </div>
+            </button>
+
+        </div>
+
+        <div class="seccion">
+
+            <label>Capas</label>
+
+            <div class="check">
+                <input type="checkbox" id="distritos" checked>
+                <span>Distritos</span>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="rios" checked>
+                <span>Ríos</span>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="estaciones" checked>
+                <span>Estaciones</span>
+            </div>
+
+        </div>
+
+        <div class="seccion">
+
+            <label>Buscar</label>
+
+            <div class="busqueda">
+                <input
+                    type="text"
+                    id="buscador"
+                    placeholder="Buscar estación o río..."
+                >
+
+                <button id="btnBuscar">
+                    🔍
+                </button>
+            </div>
+
+            <div id="resultado"></div>
+
+        </div>
+
+        <div class="seccion info" id="panelInfo">
+
+            <div class="info-titulo">
+                Información
+            </div>
+
+            <p>
+                Selecciona una estación o río en el mapa
+                para consultar sus mediciones ambientales.
+            </p>
+
+        </div>
+
+    </aside>
+
+    <main class="mapa-container">
+
+        <div id="map"></div>
+
+        <div class="leyenda">
+
+            <b>Monitoreo</b>
+
+            <div>
+                <span class="punto agua"></span>
+                Calidad de agua
+            </div>
+
+            <div>
+                <span class="punto aire"></span>
+                Calidad de aire
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
